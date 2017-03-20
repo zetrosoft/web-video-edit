@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<Title>Zetrosoft</title>
+</head>
+
+<body>
+
+<script type="text/javascript" src="js/jquery-1.1.1.pack.js"></script>
+<script type="text/javascript" src="js/jquery.JBEdit.js"></script>
+<script type="text/javascript" src="js/jquery.interface.js"></script>
+
+<link rel="stylesheet" href="css/jbedit.css" type="text/css" />
+
+<script type="text/javascript">
+$(document).ready(function() {
+	$.jfilm.init();
+});</script>
+
+<div id="JB_overlay">
+  <br><br>
+  <table align=center bgcolor=#000>
+    <tr>
+      <td>Title </td>
+      <td><input id="JB_title" type="text" value=""></td>
+    </tr>
+    <tr>
+      <td>Author </td>
+      <td><input id="JB_author" type="text" value=""></td>
+    </tr>
+    <tr>
+      <td>Description </td>
+      <td><textarea id="JB_descr"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan=2 align=center width=100%><input class="button" type="button" value="send" onClick="$.jfilm.extract();"></td>
+    </tr>
+  </table>
+</div>
+
+<div id="container">
+	<table cellpadding=0 cellspacing=0 border=0 width=100%>
+		<tr>
+           <td rowspan=2><a href="">Reset</a></td>
+			<td rowspan=2 width=100% align=center><h3>Video Title</h3><span id="JBE_filename" style="display: block">video.mp4</span></td>
+
+			<td width=15 valign=bottom align=right><div style="cursor: pointer;" onclick="$.jfilm.zoom_in(1);">+</div></td><td align=center>ZOOM<br><div class="slider2"><div class="indicator2"></div></div></td><td width=15 valign=bottom><div style="cursor: pointer;" onclick="$.jfilm.zoom_out(1);">-</div></td>
+		</tr>
+		<tr>
+			<td align=center colspan=3>1 frame every <div id="seconds"></div> sec</td>
+		</tr>
+	</table>
+
+	<br /><br />
+	<div id="video_box">
+		<table id="selector_box" cellpadding=0 cellspacing=0 border=0>
+			<tr>
+			<td id="button_left"><img src="images/arrow_l.gif" alt='prev' style="cursor: pointer;" onclick="$.jfilm.prev();" /></td>
+			<td id="slider"><div class="slider1"><div class="indicator1"></div></div></td>
+			<td id="button_right"><img src="images/arrow_r.gif" alt='next' style="cursor: pointer;" onclick="$.jfilm.next();" /></td>
+			</tr>
+		</table>
+
+		<br />
+		<div id="frames">
+		<table cellpadding=0 cellspacing=0 border=0 align=center style="height: 122px; valign: middle">
+			<tr>
+			<td><div id="more_sx"></div></td>
+			<td><div id=cell1 class=frame></div></td><td valign=middle><div id=zoom1 class=zoom>+</div></td>
+			<td><div id=cell2 class=frame></div></td><td><div id=zoom2 class=zoom>+</div></td>
+			<td><div id=cell3 class=frame></div></td><td><div id=zoom3 class=zoom>+</div></td>
+
+			<td><div id=cell4 class=frame></div></td><td><div id=zoom4 class=zoom>+</div></td>
+			<td><div id=cell5 class=frame></div></td>
+			<td><div id="more_dx"></div></td>
+			</tr>
+		</table>
+		</div>
+	</div>
+	<br />
+</div>
+<center>
+<a href="downloaded/EXTRACTED_video.mp4">get the extracted video</a> (after a few minutes from the extract!!)
+</center>
+
+
+</body>
+</html>

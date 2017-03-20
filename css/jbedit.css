@@ -1,0 +1,215 @@
+#container{
+  width: 850px;
+  margin: 0px auto; /* Right and left margin widths set to "auto" */
+  padding: 15px;
+  border: 1px solid #000;
+  background-color: #eee;
+  z-index: -2;
+  display: block;
+}
+
+#video_box{
+  width: 820px;
+  margin: auto;
+  border: 0px dotted #000;
+  padding: 0px;
+
+}
+
+#selector_box{
+  border: 0px;
+  padding: 0px;
+  margin: auto;
+}
+
+#button_left{
+  width: 100px;
+  text-align: right;
+  padding-right: 3px;
+}
+
+#slider{
+  width: 500px;
+}
+
+#button_right{
+  width: 100px;
+  text-align: left;
+  padding-left: 3px;
+}
+
+#frames{
+  width: 820px;
+  height: 122px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px dotted #000;
+  padding: 0px;
+}
+
+#container td{
+  padding: 0px;
+}
+
+.indicator1{
+  width: 30px;
+  height: 16px;
+  background-color: #009E00;
+  z-index: 30;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.slider1{
+  width: 500px;
+  height: 16px;
+  background-color: #6E9ECE;
+  z-index: 20;
+  position: relative;
+}
+
+.indicator2{
+  width: 5px;
+  height: 10px;
+  background-color: #1D0099;
+  z-index: 30;
+  cursor: pointer;
+  position: absolute;
+}
+
+.slider2{
+  width: 150px;
+  height: 10px;
+  background-color: #EEEE1E;
+  z-index: 20;
+  position: relative;
+}
+
+.frame{
+  width: 128px;
+  height: 96px;
+  padding: 0px;
+  border: 6px solid #009E00;
+  z-index: 20;
+  position: relative;
+  margin: auto;
+  text-align: left;
+}
+
+.evidenzia{
+  width: 140px;
+  height: 108px;
+  padding: 7px;
+  background-color: #444;
+  z-index: 600;
+  margin: auto;
+}
+
+.slider_selected{
+  height: 24px;
+  width: 0px;
+  background-color: #FF489C;
+  z-index: 10;
+  margin: -20px +0px;
+  position:absolute;
+}
+
+#more_sx{
+  width: 25px;
+  height: 108px;
+  background-color: #6E9ECE;
+  z-index: 20;
+  float: right;
+}
+
+#more_dx{
+  width: 25px;
+  height: 108px;
+  background-color: #6E9ECE;
+  z-index: 20;
+  float: left;
+}
+
+.Menu {  padding: 0px;
+  margin: 30px 15px;
+  position: absolute;
+  list-style: none;
+  display: none;
+  z-index: 50;
+  border : 1px solid #000;
+}
+
+.Menu li {
+  height: 20px;
+  width: 110px;
+  background-color: #FFF;
+  border : 1px solid #999;
+  z-index: 50;
+}
+
+.Menu li:hover {
+  background-color: #99F;
+}
+
+.cut_point{
+  height: 30px;
+  width: 5px;
+  background-color: #FF489C;
+  z-index: 10;
+  margin: -26px 0px;
+  position:absolute;
+}
+
+.cut_frame{
+  height: 150px;
+  width: 6px;
+  background-color: #FF489C;
+  position: absolute;
+  z-index: 1;
+  margin: -25px -6px;
+
+}
+
+.cut_selection{
+  height: 30px;
+  width: 5px;
+  background-color: #444;
+  z-index: 10;
+  margin: -26px +0px;
+  position:absolute;
+}
+
+#seconds{
+	display: inline;
+  width: 10px;
+  z-index: 20;
+}
+
+.zoom{
+	display: table-cell;
+	vertical-align: middle;
+  width: 14px;
+  height: 108px;
+  background-color: #009E00;
+  text-align: center;
+}
+
+#JB_overlay{
+	text-align: center;
+	opacity: .75;
+	height: 100%;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  position: absolute;
+}
+
+#JB_overlay td{
+	color:#FFF;
+	background-color: #000;
+
+}
